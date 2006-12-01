@@ -1,0 +1,30 @@
+# Project: Project1
+# Makefile created by Dev-C++ 4.9.9.2
+
+CPP  = g++.exe
+CC   = gcc.exe
+WINDRES = windres.exe
+RES  = 
+OBJ  = assignment5.o $(RES)
+LINKOBJ  = assignment5.o $(RES)
+LIBS =  -L"P:/Dev-Cpp/lib" -lopengl32 -lglu32 -lglut32  
+INCS =  -I"P:/Dev-Cpp/include" 
+CXXINCS =  -I"P:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include"  -I"P:/Dev-Cpp/include/c++/3.4.2/backward"  -I"P:/Dev-Cpp/include/c++/3.4.2/mingw32"  -I"P:/Dev-Cpp/include/c++/3.4.2"  -I"P:/Dev-Cpp/include" 
+BIN  = assignment5.exe
+CXXFLAGS = $(CXXINCS)  
+CFLAGS = $(INCS)  
+RM = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before assignment5.exe all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o "assignment5.exe" $(LIBS)
+
+assignment5.o: assignment5.cpp
+	$(CPP) -c assignment5.cpp -o assignment5.o $(CXXFLAGS)
