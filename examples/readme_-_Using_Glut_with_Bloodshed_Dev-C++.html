@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html>
+<head>
+    <title>Using Glut with Bloodshed Dev-C++</title>
+</head>
+
+<body>
+<h1>Using Glut with Bloodshed Dev-C++</h1>
+
+<pre>
+Download the Glut libraries for Dev-C++ below:
+
+    * <a href="glut.h">glut.h</a> - Save this file to "<b>C:/dev-c++/include/gl/</b> "
+    * <a href="glut32.def">glut32.def</a> - Save this file to "<b>C:/dev-c++/lib/</b> "
+    * <a href="glut32.dll">glut32.dll</a> - Save this file to "<b>C:/windows/command/</b> "
+
+<b>Note</b>: a copy of the glut32.dll file should accompany any exe files you make using Glut.
+This is because it is unlikely that any user that you pass your program on to will have it on their system.
+
+To compile in Dev-C++, Choose <b>Project</b>-><b>Project Options</b>-><b>Parameters</b>-><b>Linker Box</b>
+Type " <b>-lopengl32 -lglu32 -lglut32</b> "
+</pre>   
+</body>
+</html>
