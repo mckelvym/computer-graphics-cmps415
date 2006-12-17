@@ -1,0 +1,23 @@
+*******************************************************
+*******************************************************
+*****************CMPS 415 Assignment 5*****************
+********************Particle System********************
+*********************William Zhang*********************
+************************wxz1067************************
+***********************Fall 2006***********************
+*******************************************************
+*******************************************************
+ Compiled with GCC 4.0 under Mac OSX with XCode
+ Makes use of glui
+ 
+*******************************************************
+ Instructions******************************************
+*******************************************************
+ Start it and you can modify most values with the 
+ included gui. For those controls you cannot use the gui 
+ you can click on the window to change.  This is used
+ for controlling the placement of the elements.  The
+ Attractor, Emitter, and Obstacle can be controlled.
+ To toggle the placement of each one, press the first
+ letter of the element.  So, you only have a choice
+ between e, a, and o.
